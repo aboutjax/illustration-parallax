@@ -259,7 +259,7 @@ exports.parallaxForeground = parallaxForeground;
 function parallaxMiddleground() {
     window["__checkBudget__"]();
     const { x, y, z } = useGyro();
-    const mX = framer_1.transform(y, [-90, 90], [-30, 30]);
+    const mX = framer_1.transform(y, [-90, 90], [-80, 80]);
     return {
         x: mX,
     };
